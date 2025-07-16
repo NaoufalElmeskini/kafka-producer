@@ -1,7 +1,13 @@
 spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
   application:
-    name: rest-api
+    name: kafka-producer
+
 server:
-  port : 8080
-  servlet:
-    context-path: /rest-api
+  port: 8081
+
+logging:
+  level:
+    com.example.producer: INFO
+    org.springframework.kafka: INFO
