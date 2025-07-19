@@ -1,8 +1,4 @@
-version: '3.8'
-
 services:
-
-
 #   Application Producer
   kafka-producer:
     build: .
